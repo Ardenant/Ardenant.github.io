@@ -1,0 +1,114 @@
+/*Points start*/
+
+
+.points {
+  padding-top: 122px;
+  padding-bottom: 103px;
+  background-color: #2B2727;
+}
+.points__title {
+  margin-bottom: 56px;
+  max-width: 506px;
+}
+.points__row {
+  display: flex;
+  margin: 0px -89px 53px;
+}
+.points__column {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 89px;
+}
+.points__item {
+}
+.points__loc {
+  line-height: 24px;
+  padding-left: 67px;
+  position: relative;
+}
+.points__loc::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/points/loc.svg);
+  width: 33px;
+  height: 44px;
+}
+
+
+/*Points end*/
+
+
+/*Media max-width 1100px start*/
+
+
+@media (max-width: 1100px) {
+  .points__row {
+    margin: 0px -50px 53px;
+  }
+  .points__column {
+    padding: 0 50px;
+  }
+}
+
+
+/*Media max-width 1100px end*/
+
+
+/*Media max-width 960px start*/
+
+
+@media (max-width: 960px) {
+  .points {
+    padding-bottom: 80px;
+  }
+}
+
+
+/*Media max-width 960px end*/
+
+
+
+
+/*Media max-width 768px start*/
+
+
+@media (max-width: 768px) {
+  .points {
+    padding-top: 80px;
+  }
+  .points__title {
+    margin-bottom: 45px;
+  }
+  .points__row {
+    flex-wrap: wrap;
+    margin: 0px 0px 45px 0px;
+  }
+  .points__column {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/*Media max-width 768px end*/
+
+
+/*Media max-width 425px start*/
+
+
+@media (max-width: 425px) {
+  .points {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .points__row {
+    margin: 0 0 30px 0;
+  }
+}
+
+
+/*Media max-width 425px end*/

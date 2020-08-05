@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Корзина</title>
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/basket.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<a href="tel:79267833546" class="header__phone tel">+7 (926) 783-35-46</a>
+				<div class="header__logo">
+					<div class="logo">Жора-Обжора</div>
+				</div>
+				<img src="img/Shopping.svg" alt="" class="header__basket">
+			</div>
+			<div class="header__logo_768">
+				<div class="logo">Жора-Обжора</div>
+			</div>
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link link">Каталог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">Оплата и доставка</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">Рецепты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="product">
+		<div class="container">
+			<div class="product-header__title title--border">Корзина</div>
+			<div class="product__wrapper">
+				<div class="product__title">Товар</div>
+				<div class="product__title">цена</div>
+				<div class="product__title">Количество</div>
+				<div class="product__title">итого</div>
+			</div>
+			<div class="product__column">
+				<button class="product__basket" type="submit"><img src="img/basket/product/basket.svg" alt="" ></button>
+				<img src="img/basket/product/product-1.png" alt="" class="product__img">
+				<div class="product__info">
+					<div class="product__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+				<div class="product__price price">18</div>
+				<div class="product__amount">
+					<span class="down"></span>
+					<input type="text" value="2" />
+					<span class="up"></span>
+				</div>
+				<div class="product__total price">36</div>
+				</div>
+			</div>
+			<div class="product__column">
+				<button class="product__basket" type="submit"><img src="img/basket/product/basket.svg" alt="" ></button>
+				<img src="img/basket/product/product-1.png" alt="" class="product__img">
+				<div class="product__info">
+					<div class="product__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+				<div class="product__price price">18</div>
+				<div class="product__amount">
+					<span class="down"></span>
+					<input type="text" value="2" />
+					<span class="up"></span>
+				</div>
+				<div class="product__total price">36</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="basket">
+		<div class="container">
+			<div class="basket__wrapper">
+				<div class="basket__title title">Для оформления заказа заполните форму</div>
+				<form action="" class="basket__form form">
+					<label for="" class="form__row">
+						<input type="text" class="form__input" placeholder="Имя">
+						<input type="text" class="form__input" placeholder="Фамилия">
+					</label>
+					<label for="" class="form__row">
+						<input type="text" class="form__input" placeholder="Адрес">
+						<input type="text" class="form__input" placeholder="Населенный пункт">
+					</label>
+					<label for="" class="form__row">
+						<input type="text" class="form__input" placeholder="Почтовый индекс">
+						<input type="text" class="form__input" placeholder="Телефон">
+					</label>
+					<label for="" class="form__row">
+						<input type="text" class="form__input" placeholder="Электронная почта">
+						<input type="text" class="form__input" placeholder="Область/район">
+					</label>
+					<textarea name="text" id="" cols="105" rows="5" class="form__text" placeholder="Примечания к заказу"></textarea>
+				</form>
+			</div>
+			<div class="basket__radio radio">
+				<div class="radio__wrapper">
+					<form action="" class="radio__form">
+						<div class="radio__title title">Способ доставки</div>
+						<label for="" class="radio__row">
+							<input type="radio" name="radio1" id="answer1" value="yes" class="radio__buttons">
+							<span class="radio__text">Самовывоз Жулебино (бесплатно)</span>
+						</label>
+						<label for="" class="radio__row">
+							<input type="radio" class="radio__buttons">
+							<span class="radio__text">Курьер (400 руб. по Москве и Новой Москве)</span>
+						</label>
+						<label for="" class="radio__row">
+							<input type="radio" class="radio__buttons">
+							<span class="radio__text">СДЭК (от 350 руб.)</span>
+						</label>
+						<label for="" class="radio__row">
+							<input type="radio" class="radio__buttons">
+							<span class="radio__text">Почта России (от 250 руб.)</span>
+						</label>
+					</form>
+					<form action="" class="basket__wrapper">
+						<div class="radio__title title">Способ оплаты</div>
+						<label for="" class="radio__row">
+							<input type="radio" class="radio__buttons">
+							<span class="radio__text">Оплата картой</span>
+						</label>
+						<label for="" class="radio__row">
+							<input type="radio" class="radio__buttons">
+							<span class="radio__text">Оплата наличными</span>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__contacts">
+				<a class="footer__tel tel" href="tel:79267833546">+7 (926) 783-35-46</a>
+				<a class="footer__tel tel" href="tel:79060935969">+7 (906) 093-59-69</a>
+				<a class="footer__mail mail" href="mailto:balik1979@inbox.ru">balik1979@inbox.ru</a>
+			</div>
+			<div class="footer__logo logo">Жора-Обжора</div>
+			<nav class="footer__menu footer-menu">
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link link">Каталог</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link link">Оплата и доставка</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>

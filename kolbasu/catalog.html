@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/catalog.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+
+
+
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<a href="tel:79267833546" class="header__phone tel">+7 (926) 783-35-46</a>
+				<div class="header__logo">
+					<div class="logo">Жора-Обжора</div>
+				</div>
+				<img src="img/Shopping.svg" alt="" class="header__basket">
+			</div>
+			<div class="header__logo_768">
+				<div class="logo">Жора-Обжора</div>
+			</div>
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link link">Каталог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">Оплата и доставка</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">Рецепты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link link">контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="catalog">
+		<div class="container lines__wrapper">
+			<div class="catalog__header catalog-header">
+				<div class="catalog-header__title">Каталог</div>
+				<div class="catalog-header__search">
+					<input class="catalog-header__input" type="text" placeholder="Поиск по сайту ...  Например: Многослойная оболочка">
+					<button class="catalog-header__btn"><img src="img/ui/search.svg" alt=""></button>
+				</div>
+			</div>
+			<img src="img/ui/lines.svg" alt="" class="lines">
+			<div class="container">
+				<nav class="catalog__menu ">
+					<div class="catalog__menu-wrapper">
+						<li class="catalog__title accordeon">Натуральная оболочка</li>
+						<li class="catalog__subtitle sub">Свиная оболочка, черева, пузыри</li>
+						<ul class="catalog__list">
+							<li class="catalog__item">Пузыри свиные</li>
+							<li class="catalog__item">Черева свинья 10 метров</li>
+							<li class="catalog__item">Черева свиная 91,4 метра</li>
+						</ul>
+
+						<li class="catalog__subtitle sub">Говяжья оболочка, черева, круга, синюга</li>
+						<ul class="catalog__list">
+							<li class="catalog__item">Круга говяжьи</li>
+							<li class="catalog__item">Черева говяжья 10 метров</li>
+							<li class="catalog__item">Черева говяжья 30 метров</li>
+						</ul>
+
+						<li class="catalog__subtitle sub">Баранья оболочка, черева, синюга</li>
+						<ul class="catalog__list">
+							<li class="catalog__item">Синюга баранья</li>
+							<li class="catalog__item">Черева баранья 10 метров</li>
+							<li class="catalog__item">Черева баранья 110 метров</li>
+						</ul>
+					</div>
+					<div class="catalog__menu-wrapper">
+						<li class="catalog__title">Искусствнная
+						оболочка</li>
+						<ul class="catalog__list">
+							<li class="catalog__item">Коллагеновая</li>
+							<li class="catalog__item">ЧПолиамидная</li>
+							<li class="catalog__item">Фиброузная</li>
+							<li class="catalog__item">Сетки</li>
+							<li class="catalog__item">Сетки формовочные</li>
+							<li class="catalog__item">Текстильная оболочка</li>
+						</ul>
+					</div>
+					<div class="catalog__menu-wrapper">
+						<li class="catalog__title">Приправы</li>
+						<ul class="catalog__list">
+							<li class="catalog__item">Стартовые культуры</li>
+							<li class="catalog__item">Виды перцев</li>
+							<li class="catalog__item">Нитритовая соль</li>
+							<li class="catalog__item">Пищевые добавки</li>
+							<li class="catalog__item">Смеси специй</li>
+							<li class="catalog__item">Смеси пряностей и приправ</li>
+						</ul>
+					</div>
+					<div class="catalog__menu-wrapper">
+						<li class="catalog__title">Оборудование для колбас</li>
+						<ul class="catalog__list">
+							<li class="catalog__item">Щепы</li>
+							<li class="catalog__item">Весы</li>
+							<li class="catalog__item">Насадки</li>
+							<li class="catalog__item">Шпагат</li>
+							<li class="catalog__item">Шприцы</li>
+							<li class="catalog__item">Термометры</li>
+							<li class="catalog__item">Перчатки</li>
+						</ul>
+					</div>
+					<div class="catalog__menu-wrapper">
+						<div class="range__form" id="range__form">
+							<div class="range__bar">
+								<div class="range__label">Фильтровать по цене</div>
+								<div id="r-slider"></div>
+								<div class="range__info">0 р - 4700 р</div>
+							</div>
+							<div class="range__bar">
+								<div class="range__label">Фильтровать по Метрам</div>
+								<div id="m-slider"></div>
+								<div class="range__info">2 м </div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="catalog__card catalog-card">
+					<div class="container catalog-card__wrapper">
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container catalog-card__wrapper">
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container catalog-card__wrapper">
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__row">
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-1.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-2.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog-card__column">
+								<div class="catalog-card__item">
+									<div class="catalog-card__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+									<span class="catalog-card__decor"></span>
+									<div class="catalog-card__img">
+										<img src="img/catalog/catalog/catalog-3.png" alt="">
+									</div>
+									<div class="catalog-card__price">18</div>
+									<a href="№" class="catalog-card__btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="resent">
+		<div class="container resent__wrapper">
+			<div class="resent__title title">НЕдавно просмотренные товары<span></span></div>
+			<div class="resent__row">
+				<div class="resent__column">
+					<div class="resent__item">
+						<div class="resent__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+						<span class="resent__decor"></span>
+						<img src="img/catalog/resent/resent-1.png" alt="" class="resent__img">
+						<div class="resent__price">18</div>
+						<a href="№" class="resent__btn">Смотреть</a>
+					</div>
+				</div>
+				<div class="resent__column">
+					<div class="resent__item">
+						<div class="resent__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+						<span class="resent__decor"></span>
+						<img src="img/catalog/resent/resent-1.png" alt="" class="resent__img">
+						<div class="resent__price">18</div>
+						<a href="№" class="resent__btn">Смотреть</a>
+					</div>
+				</div>
+				<div class="resent__column">
+					<div class="resent__item">
+						<div class="resent__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+						<span class="resent__decor"></span>
+						<img src="img/catalog/resent/resent-1.png" alt="" class="resent__img">
+						<div class="resent__price">18</div>
+						<a href="№" class="resent__btn">Смотреть</a>
+					</div>
+				</div>
+				<div class="resent__column">
+					<div class="resent__item">
+						<div class="resent__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+						<span class="resent__decor"></span>
+						<img src="img/catalog/resent/resent-1.png" alt="" class="resent__img">
+						<div class="resent__price">18</div>
+						<a href="№" class="resent__btn">Смотреть</a>
+					</div>
+				</div>
+				<div class="resent__column">
+					<div class="resent__item">
+						<div class="resent__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+						<span class="resent__decor"></span>
+						<img src="img/catalog/resent/resent-1.png" alt="" class="resent__img">
+						<div class="resent__price">18</div>
+						<a href="№" class="resent__btn">Смотреть</a>
+					</div>
+				</div>
+				<div class="resent__column">
+					<div class="resent__item">
+						<div class="resent__name">Многослойная оболочка Бига-3, ⌀40, золотая, 1 метр</div>
+						<span class="resent__decor"></span>
+						<img src="img/catalog/resent/resent-1.png" alt="" class="resent__img">
+						<div class="resent__price">18</div>
+						<a href="№" class="resent__btn">Смотреть</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__contacts">
+				<a class="footer__tel tel" href="tel:79267833546">+7 (926) 783-35-46</a>
+				<a class="footer__tel tel" href="tel:79060935969">+7 (906) 093-59-69</a>
+				<a class="footer__mail mail" href="mailto:balik1979@inbox.ru">balik1979@inbox.ru</a>
+			</div>
+			<div class="footer__logo logo">Жора-Обжора</div>
+			<nav class="footer__menu footer-menu">
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link link">Каталог</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link link">Оплата и доставка</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/nouislider.js"></script>
+<script src="js/script.js"></script>
